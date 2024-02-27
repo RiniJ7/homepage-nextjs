@@ -1,5 +1,5 @@
 import Link from "next/link"
-// import Image from "next/image"
+import Image from "next/image"
 import { link } from "fs"
 import { NAV_LINKS } from "@/constants" 
 import Button from "./Button"
@@ -7,9 +7,8 @@ import Button from "./Button"
 const Navbar = () => {
   return (
     <nav className="border-2 border-red-500 flexBetween max-container padding-container relative z-30 py-5">
-        <Link href='/'>
-            Logo
-            {/* <Image src="" alt="logo" width={74} height={29} /> */}
+        <Link href='/' >
+            <Image src="/my-logo.svg" alt="logo" width={74} height={29} />
    </Link>
         <ul className="hidden h-full gap-12 lg:flex">
                 {NAV_LINKS.map((link) => (
