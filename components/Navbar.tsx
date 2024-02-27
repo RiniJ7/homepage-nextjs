@@ -2,6 +2,8 @@ import Link from "next/link"
 // import Image from "next/image"
 import { link } from "fs"
 import { NAV_LINKS } from "@/constants" 
+import Button from "./Button"
+
 const Navbar = () => {
   return (
     <nav className="border-2 border-red-500 flexBetween max-container padding-container relative z-30 py-5">
@@ -16,6 +18,15 @@ const Navbar = () => {
 </Link>
                 ))}
             </ul>
+            <div className="lg:flexCenter hidden">
+{/* here we are creating a new button component since we are reusing the same component for more than 3 or 4 times  */}
+            <Button 
+            type="button"
+            title="Login"
+            icon="/user.svg"
+            variant="btn_dark_green"
+            />
+            </div>
         </nav>
  
  
