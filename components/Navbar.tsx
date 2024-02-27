@@ -1,17 +1,21 @@
 import Link from "next/link"
-import Image from "next/image"
-
+// import Image from "next/image"
+import { link } from "fs"
+import { NAV_LINKS } from "@/constants" 
 const Navbar = () => {
   return (
     <nav className="border-2 border-red-500 flexBetween max-container padding-container relative z-30 py-5">
         <Link href='/'>
             Logo
             {/* <Image src="" alt="logo" width={74} height={29} /> */}
-            <ul className="hidden h-full gap-12 lg:flex">Home</ul>
-            <ul className="hidden h-full gap-12 lg:flex">How we work</ul>
-            <ul className="hidden h-full gap-12 lg:flex">Use our AI matching tools</ul>
-            <ul className="hidden h-full gap-12 lg:flex">Login/SignUp</ul>
-        </Link>
+   </Link>
+        <ul className="hidden h-full gap-12 lg:flex">
+                {NAV_LINKS.map((link) => (
+<Link href={link.href} key={link.key} className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold"> 
+{link.label} 
+</Link>
+                ))}
+            </ul>
         </nav>
  
  
