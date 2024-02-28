@@ -34,7 +34,7 @@ module.exports = {
         'bg-img-2': "url('/img-2.png')",
         'feature-bg': "url('/feature-bg.jpg')",
         pattern: "url('/pattern.jpg')",
-        'pattern-2': "url('/pattern-bg.jpeg')",
+        'pattern-2': "url('/pattern-bg.png')",
       },
       screens: {
         xs: '400px',
