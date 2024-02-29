@@ -9,8 +9,8 @@ export default function Home() {
   return (
 <>
 <Hero />
-<Guide/>
 <Card/>
+<Guide/>
 <Features/>
 <GetApp/>
 
