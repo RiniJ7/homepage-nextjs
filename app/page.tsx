@@ -13,7 +13,6 @@ export default function Home() {
 <Guide/>
 <Features/>
 <GetApp/>
-
 </>
   )
 }
